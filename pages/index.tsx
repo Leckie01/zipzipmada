@@ -6,6 +6,7 @@ import DaumPostcode from "react-daum-postcode";
 import { useEffect, useState } from "react";
 import { jojung } from "../db/jojung";
 import { tugi } from "../db/tugi";
+import Head from "next/head";
 
 const { Header, Content, Footer } = Layout;
 
@@ -150,6 +151,13 @@ const Home = () => {
 
   return (
     <Layout>
+      <Head>
+        <title>투기과열지구, 조정대상지역 조회</title>
+        <meta
+          name="description"
+          content="투기과열지구, 조정대상지역, 투기, 조정, 부동산, 투기과열지구 조회, 조정대상지역 조회"
+        />
+      </Head>
       <Header style={{ zIndex: 1, width: "100%" }}>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
           <Menu.Item key="1" onClick={() => setResult(null)}>
