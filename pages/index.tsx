@@ -181,6 +181,16 @@ const Home = () => {
           <Menu.Item key="1" onClick={() => setResult(null)}>
             투기, 조정 조회
           </Menu.Item>
+          <Menu.Item>
+            <a href="http://www.molit.go.kr/USR/I0204/m_45/dtl.jsp?gubun=&search=%ED%88%AC%EA%B8%B0&search_dept_id=&search_dept_nm=&old_search_dept_nm=&psize=10&search_regdate_s=&search_regdate_e=&srch_usr_nm=&srch_usr_num=&srch_usr_year=&srch_usr_titl=Y&srch_usr_ctnt=&lcmspage=1&idx=17013">
+              {"국토교통부\n투기과열지구 현황"}
+            </a>
+          </Menu.Item>
+          <Menu.Item>
+            <a href="http://www.molit.go.kr/USR/I0204/m_45/dtl.jsp?gubun=&search=%EC%A1%B0%EC%A0%95&search_dept_id=&search_dept_nm=&old_search_dept_nm=&psize=10&search_regdate_s=&search_regdate_e=&srch_usr_nm=&srch_usr_num=&srch_usr_year=&srch_usr_titl=Y&srch_usr_ctnt=&lcmspage=1&idx=17012">
+              {"국토교통부\n조정대상지역 현황"}
+            </a>
+          </Menu.Item>
         </Menu>
       </Header>
       <Content style={{ backgroundColor: "#fff" }}>
@@ -375,7 +385,15 @@ const Home = () => {
         )}
       </Content>
       <Footer style={{ textAlign: "center", backgroundColor: "#fff" }}>
-        {`zipzipmada ©${moment().format("YYYY")} Created by Leckie`}
+        <div>
+          <a
+            href="mailto:zipmadaz@gmail.com"
+            style={{ color: "#2596ff", cursor: "pointer" }}
+          >
+            서비스 버그 제보하기
+          </a>
+        </div>
+        {`zipzipmada ©${moment().format("YYYY")} Created by zipmadaz`}
       </Footer>
     </Layout>
   );
