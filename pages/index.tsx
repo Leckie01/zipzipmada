@@ -170,6 +170,11 @@ const Home = () => {
           property="og:description"
           content="원하는 지역의 투기과열지구, 조정대상지역 여부를 조회합니다."
         />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1625106868943701"
+          crossOrigin="anonymous"
+        ></script>
       </Head>
       <Header style={{ zIndex: 1, width: "100%" }}>
         <Menu theme="dark" mode="horizontal" defaultSelectedKeys={["1"]}>
