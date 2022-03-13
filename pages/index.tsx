@@ -152,10 +152,23 @@ const Home = () => {
   return (
     <Layout>
       <Head>
-        <title>투기과열지구, 조정대상지역 조회</title>
+        <title>집집마다: 투기과열지구, 조정대상지역 조회</title>
         <meta
           name="description"
           content="투기과열지구, 조정대상지역, 투기, 조정, 부동산, 투기과열지구 조회, 조정대상지역 조회"
+        />
+        <meta property="og:url" content="https://www.zipzipmada.site" />
+        <meta
+          property="og:image"
+          content="https://www.zipzipmada.site/assets/bg-image.jpg"
+        />
+        <meta
+          property="og:title"
+          content="투기과열지구, 조정대상지역 조회하기"
+        />
+        <meta
+          property="og:description"
+          content="원하는 지역의 투기과열지구, 조정대상지역 여부를 조회합니다."
         />
       </Head>
       <Header style={{ zIndex: 1, width: "100%" }}>
@@ -357,7 +370,7 @@ const Home = () => {
         )}
       </Content>
       <Footer style={{ textAlign: "center", backgroundColor: "#fff" }}>
-        {`zipzipamda ©${moment().format("YYYY")} Created by Leckie`}
+        {`zipzipmada ©${moment().format("YYYY")} Created by Leckie`}
       </Footer>
     </Layout>
   );
